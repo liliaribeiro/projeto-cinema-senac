@@ -185,3 +185,17 @@ li:hover {
   .card:hover {
     transform: scale(1.03);
   }
+
+  /*Inicia rodapé (Footer)*/
+  footer {
+    height: 300px;/*Altura*/
+    margin-top: 30px;/*Espaçamento externo superior*/
+    display: flex;/*Utilizando flex para poder alinhar os elementos*/
+    flex-direction: column;/*Colocando os elementos em coluna*/
+    align-items: center;/*Alinhando os elementos no centro verticalmente*/
+    justify-content: center;/*Alinhando os elementos no centro horizontalmente*/
+  }
+
+  .footer-texto {
+    color: #ffffff;/*Cor do texto Hexadecimal*/
+  }

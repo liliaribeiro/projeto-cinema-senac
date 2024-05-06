@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Cinema Cinesenac - Batman</title>
+    <link rel="stylesheet" href="./outros.css">
+    <title>Cinema Cinesenac - Localização</title>
   </head>
   <body>
     <!--1° Cabeçalho------------------>
@@ -41,43 +42,64 @@
     <!--Iniciando Banner-->
 <div id="banner"></div>
 
- <!--Parte Trailer-->
- <div id="trailer-container">
-
-<div class="content">
-<video controls class="trailer" >
-<source src="./video/The Batman - DC FanDome Teaser.mp4" type="video/mp4">
-Seu navegador não possui suporte para videos.
-</video>
-
-<!--Div descrição do Trailer-->
-<div id="sinopse">
-  <p class="description">
-    Após dois anos espreitando as ruas como batman, Bruce Wayne se encontra 
-    nas profundezas mais sombrias de Gotham City. Com aliados confiáveis, o vigilante solitário se 
-    estabelece como a personificação da vingança para a população.
-  </p>
-
-  <!--Botão ir para Página para comprar ingresso-->
-<button class="button">Comprar Ingresso</button>
+<!--Esta Parte esta estilizada pelo outros.css-->
+<div class="contato">
+  <h1>Formulário de Contato</h1>
 </div>
+
+<!--Formulario-->
+<div class="form-container">
+  <form class="formulario" action="https://formsubmit.co/lyribeiro7@gmail.com" method="POST">
+
+<div>
+  <input type="hidden" name="_next" value="./sucesso.html">
 </div>
- </div>
 
-<!--Parte do trailer finalizado-->
-
-<!--Parte cards dos atores-->
-<!--DIV principal que engloba todos os card-->
-<div class="actor-cards-container">
-<div class="cards-content">
-<!--Duas classes card ->responsável para estilizar os cards-->
-
-<div class="card banner-1 "> <span class="texto">Robert Pattison - Batman</span></div>
-<div class="card banner-2 "> <span class="texto"> Zoe Kravitz - Mulher Gato</span></div>
-<div class="card banner-3 "> <span class="texto"> Jeffrey Wright - Gordon</span></div>
-
+<div>
+<input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, Obrigado pelo contato e logo responderemos">
 </div>
+
+  
+<!--Input do nome-->
+<div>
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
 </div>
+
+<!--Input Telefone-->
+<div>
+  <label for="telefone">Telefone:</label>
+  <input type="text" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+</div>
+
+<!--Input E-mail-->
+<div>
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+</div>
+
+<!--Input Assunto-->
+<div>
+  <label for="assunto">Assunto:</label>
+  <input type="text" id="assunto" name="assunto" required placeholder="Assunto">
+</div>
+
+<!--Textarea-->
+<div>
+  <label for="msg">Mensagem:</label>
+  <textarea id="msg" name="msg" required rows placeholder="Mensagem"></textarea>
+</div>
+
+<!--Botão Enviar-->
+<div>
+  <button type="submit">Enviar sua Mensagem</button>
+</div>
+
+</form>
+</div>
+
+<!--Finalizando esta parte que foi estilizada pelo outros.css-->
+
 <!--Footer -> Rodapé -> Colocamos (a logo nossa imagem),
 (textos todos os direitos reservados), (por quem foi desenvolvidos essa página)
 (vamos ter uma navegação quando usar celular)-->
