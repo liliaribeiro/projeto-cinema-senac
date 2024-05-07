@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: black; /*Cor de fundo da página*/
+  background-color: rgb(0, 0, 0); /*Cor de fundo da página*/
 }
 
 /*1°Estilizando o cabeçalho header*/
@@ -199,3 +199,73 @@ li:hover {
   .footer-texto {
     color: #ffffff;/*Cor do texto Hexadecimal*/
   }
+
+  /*display nome para desaparecer a navegação e aparecer apenas em dispositivo móveis*/
+  .footer-navigation {
+    display: none;/*Para não aparecer na página normal*/
+  }
+  
+  .footer-list {
+    display: flex;/*Utilizando flex para poder alinhar os elementos*/
+    flex-direction: column;/*Colocando os elementos em coluna*/
+    align-items: center;/*Alinhando os elementos no centro verticalmente*/
+  }
+
+  /*Criando versão responsiva*/
+  /*Tela vai até 768px, a largura aplica essa regra*/
+@media(max-width: 768px) {
+  /*Cria um bloco que ocupa espaço horizontal disponível*/
+  .footer-navigation {
+    display: block;/*Vai fazer aparecer a navegação pelo dispositivo*/
+  }
+
+nav {
+  display: none;/*Tirando a navegação do header*/
+}
+
+#banner {
+  background-position: 40%;/*Alinha os elementos para direita*/
+}
+
+.trailer-container {
+  width: 100%;/*Largura*/
+  height: 400px;/*Altura*/
+  display: flex;/*Utilizando flex para poder alinhar os elementos*/
+  flex-direction: column;/*Colocando os elementos em coluna*/
+}
+
+.content {
+  width: 95%;/*Largura*/
+  display: flex;/*Utilizando para utlizar flex-direction*/
+  flex-direction: column;/*Colocando elemento em coluna*/
+}
+
+.trailer {
+width: 100%;/*Largura*/
+}
+
+#sinopse {
+width: 95%;/*Largura*/
+display: flex;/*Utilizando para utlizar flex-direction*/
+flex-direction: column;/*Colocando elemento em coluna*/
+justify-content: space-between;/*Espaçamento entre os elementos*/
+}
+
+.description {
+  width: 100%;/*Largura*/
+}
+
+.button {
+  width: 100%;/*Largura*/
+  margin-top: 30px;/*Espaçamento*/
+}
+
+.cards-content {
+  grid-template-columns: 1fr; /*Colocando 1 coluna deixando os cards um embaixo do outro*/
+margin-top: 100px;/*Espaçamento superior (externo)*/
+}
+
+.card {
+  margin-bottom: 25px;/*Espaçamento inferior (externo)*/
+}
+}
